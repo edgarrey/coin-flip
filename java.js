@@ -46,9 +46,20 @@ let dom = document.querySelector('main')
 dom.append(coin.toString())
 
 
-function display20Flips(){
-    for (let index = 0; index <= 20; index++) {
+function display20Flips(numTimes){
         
-  console.log( coin.toString()[index])
-    } 
-}
+        for(var i = 0; i < numTimes; i++){
+      
+          
+          var coin = Math.floor(Math.random() * 10);
+      
+          
+          var even = (coin % 2 === 0);
+      
+          
+          console.log("The coin was " + (even ? "heads " : " tails"));
+        }
+      }
+      
+      
+     
